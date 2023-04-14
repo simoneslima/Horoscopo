@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoscopo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Qual é o seu Signo?</h1>
+    </header>
+    <section>
+
+    <h2>Digite Dia e Mês do seu Nascimento:</h2>
+    <input type="number" id="dia" name="dia" min="1" max="31" oninput="if(this.value > 31) this.value = 31; if(this.value.length === 1 && this.value === '0') this.value = '';" placeholder="Dia" >
+    <input type="number" id="mes" name="mes" min="1" max="12" oninput="if(this.value > 12) this.value = 12; if(this.value.length === 1 && this.value === '0') this.value = '';" placeholder="Mês" >
+   <button onclick="descobrirSigno()">Descobrir signo</button>
+   <p id="resultado"></p>
+
+    </section>
+    
+    <footer>
+        &copy;simoneqclrs
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
