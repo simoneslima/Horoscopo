@@ -27,8 +27,8 @@ function encontrarSigno(dia, mes) {
 }
 
 function descobrirSigno() {
-  let dia = parseInt(document.getElementById("dia").value);
-  let mes = parseInt(document.getElementById("mes").value);
+  let dia = parseInt(document.getElementById("dia").value.replace(/[-+]/g, ""));
+  let mes = parseInt(document.getElementById("mes").value.replace(/[-+]/g, ""));
   let resultado = document.getElementById("resultado");
   if (isNaN(dia) || isNaN(mes)) {
     resultado.innerHTML = "Digite um dia e um mês válidos.";
