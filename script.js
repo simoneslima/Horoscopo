@@ -1,3 +1,12 @@
+function limparCampos() {
+  // Limpa os campos de entrada
+  document.getElementById("dia").value = "";
+  document.getElementById("mes").value = "";
+  
+  // Limpa o conteúdo da área de resultado
+  document.getElementById("resultado").innerHTML = "";
+}
+
 function encontrarSigno(dia, mes) {
   if ((dia >= 21 && mes === 3) || (dia <= 19 && mes === 4)) {
     return "Áries";
@@ -31,7 +40,8 @@ function descobrirSigno() {
   let mes = parseInt(document.getElementById("mes").value.replace(/[-+]/g, ""));
   let resultado = document.getElementById("resultado");
   if (isNaN(dia) || isNaN(mes)) {
-    resultado.innerHTML = "Digite um dia e um mês válidos.";
+    resultado.innerHTML = "<span style='color: red;'>Digite dia e um mês válido.</span>";
+    
   } else {
     let signo = encontrarSigno(dia, mes);
     resultado.innerHTML = "Seu signo é " + signo + ".";

@@ -18,8 +18,8 @@ h3 {
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color:orange;
+    font-size: 30px;
+    color:white;
 }
 section{
   
@@ -36,3 +36,115 @@ footer {
    font-size: 20px;
    padding-top: 10px;
 }
+/* Estilo básico para os botões */
+button {
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+  text-decoration: none; /* Remove o sublinhado */
+  display: block; /* Faz os botões ocuparem toda a linha */
+  font-size: 16px; /* Tamanho da fonte */
+  margin: 10px auto; /* Centraliza e adiciona espaçamento entre os botões */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Aponta para mãozinha ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+}
+
+/* Estilo específico para o botão de limpar */
+button:hover {
+  background-color: #45a049; /* Cor mais escura quando o mouse passar */
+}
+
+button:focus {
+  outline: none; /* Remove o contorno quando o botão for focado */
+}
+
+button:active {
+  background-color: #3e8e41; /* Cor mais escura quando o botão for clicado */
+}
+
+/* Estilo do botão de limpar com cor diferente */
+button[type="button"] {
+  background-color: #f44336; /* Cor de fundo vermelha */
+}
+
+button[type="button"]:hover {
+  background-color: #e53935; /* Cor mais escura quando passar o mouse */
+}
+
+button[type="button"]:active {
+  background-color: #d32f2f; /* Cor mais escura ao clicar */
+}
+/* Estilo dos inputs */
+input {
+    width: 40%; /* Ajuste aqui para diminuir a largura, você pode mudar esse valor */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Borda suave */
+    margin-bottom: 10px; /* Espaçamento abaixo dos inputs */
+    box-sizing: border-box; /* Para garantir que o padding não afete a largura */
+  }
+  
+  
+  /* Estilo para os botões ficarem um ao lado do outro */
+  button {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-right: 10px; /* Espaço entre os botões */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Aponta para mãozinha ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+    display: inline-block; /* Faz com que os botões fiquem na mesma linha */
+    width: auto; /* Faz o botão ter largura automática */
+  }
+  
+  /* Efeito de hover nos botões */
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Efeito de clique nos botões */
+  button:active {
+    background-color: #3e8e41;
+  }
+  
+  /* Estilo específico para o botão "Limpar" */
+  button[type="button"] {
+    background-color: #f44336; /* Cor de fundo vermelha */
+  }
+  
+  /* Efeito de hover e click para o botão "Limpar" */
+  button[type="button"]:hover {
+    background-color: #e53935;
+  }
+  
+  button[type="button"]:active {
+    background-color: #d32f2f;
+  }
+  
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    flex: 1; /* Faz com que a seção ocupe o espaço disponível */
+}
+
+footer {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adiciona uma leve sombra ao texto */
+}
+
